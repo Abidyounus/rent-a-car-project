@@ -1,0 +1,249 @@
+
+:root {
+    --font-family-paragraph: "Poppins", sans-serif;
+    --font-family-heading: "Roboto", sans-serif;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+.navbar{
+   
+    width: 100%;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 6px 0px 6px 0px;
+    border: 1px solid #ccc;
+    background-color: #e8e8e8;
+    box-sizing: border-box;
+    font-family: var(--font-family-paragraph);
+    position: fixed;
+    top: 0px;
+}
+.navbar a{
+    text-decoration: none;
+    color:black;
+}
+
+.logo{
+    width: 20%;
+    display: flex;
+    justify-content: left;
+    
+}
+.nav-items {
+    width: 80%;
+    display: flex;  
+    align-items: center;
+    justify-content: space-between;
+    justify-content: center;
+    gap: 35px;
+   
+}
+
+.banner-icons{
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    justify-content: right;
+    gap:5px;   
+}
+
+.banner-icons .call{
+    display: flex;
+    justify-content: right;
+    font-size: 25px;
+    color:#FFD700;
+}
+.banner-icons .whatsapp{
+    display: flex;
+    justify-content: right;
+    font-size: 20px; 
+    color:#FFD700;
+}
+.top-banner{
+    width:100%;
+    height: 550px;
+    background-image: url(./images/banner.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: top;
+    top: 100px;
+    
+}
+.banner-content{
+    font-family: var(--font-family-heading);
+    color:#FFD700;
+    font-size: 25px;
+    margin:0 40px;
+    padding: 150px;
+    text-align: center;
+
+}
+.call a , .whatsapp a {
+    text-decoration: none;
+    color:#FFD700;
+
+}
+.section-1{
+    margin:5px 50px;
+    padding:40px 5px;
+    width:90%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    justify-items: space-between;
+    border: 3px solid #FF0000 ;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    
+    
+}
+.car a , .truck a , .button a , .submit a{
+    text-decoration: none;
+    color:#fff;
+}
+.button{
+    display: flex;
+    flex-direction: column;
+    justify-items: space-between;
+    margin-top: 5px;
+    gap: 10px;
+}
+.form, .trackingform{
+    display: flex;
+    margin: 5px;
+    padding: 5px;
+    font-family: var(--font-family-paragraph);
+    font-size: 15px;
+    gap:35px;
+
+}
+.form input, .form select{
+    width: 200px;
+    height: 35px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    padding: 5px;
+    font-family: var(--font-family-paragraph);
+}   
+.button .car, .button .truck, .trackingform button{
+    border: 1px solid #FF0000;
+    background-color: #FF0000;  
+    width: 115px;
+    height: 50px;
+    font-family: var(--font-family-paragraph);
+    font-size: 15px;
+    padding: 5px;
+    color: #fff;
+    border-radius: 10px;
+    text-align: center;
+}
+.section-1 button {
+    display: flex;
+    justify-content: center;
+    border: 1px solid #FF0000;
+    background-color: #FF0000;  
+    width: 110px;
+    height:38px;
+    font-family: var(--font-family-paragraph);
+    font-size: 15px;
+    padding: 10px;
+    color: #fff;
+    border-radius: 10px;
+    align-items: center;
+    margin-top: 35px;
+}
+.trackingform{
+    font-family: var(--font-family-heading);
+    display: flex;
+    justify-content: center;
+    margin:5px 50px;
+    padding:40px 5px;
+    width:90%;
+    border: 3px solid #FF0000 ;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    align-items: center;
+    gap: 100px;
+
+}
+.main-heading{
+    font-family: var(--font-family-heading);
+    font-size: 35px;
+    font-weight: bold;
+    text-align: center;
+}
+.blogs{
+    width:100%;
+    display: flex;
+    justify-content: center;
+    gap:10px;
+    
+}
+.blogs .card{
+    width:20%;
+    padding: 5px;
+    margin: 10px;
+    display: flex;
+    
+}
+.image img{
+    width:100%;
+}
+.card .heading{
+    font-family: var(--font-family-heading);
+    font-size: 15px;
+    text-align: center;
+    font-weight: bold;
+}
+.card .paragraph{
+     font-family:var(--font-family-paragraph);
+    font-size: 15px;
+    text-align: center;
+    
+}
+.card a{
+    text-decoration: none;
+    color:#FF0000 ;
+    display: flex;
+    justify-content: right;
+}
+.footer .logo img {
+  width: 120px;
+}
+
+.social-icons a {
+  color: #fff;
+  margin-left: 15px;
+  font-size: 20px;
+  transition: color 0.3s;
+}
+
+.social-icons a:hover {
+  color: #00aced;
+}
+
+.footer-middle {
+  margin: 20px 0;
+  line-height: 1.6;
+}
+
+.footer-bottom a {
+  color: #ccc;
+  margin: 0 10px;
+  text-decoration: none;
+  font-size: 14px;
+  transition: color 0.3s;
+}
+
+.footer-bottom a:hover {
+  color: #fff;
+}
