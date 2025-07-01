@@ -21,10 +21,9 @@
     padding: 6px 0px 6px 0px;
     border: 1px solid #ccc;
     background-color: #e8e8e8;
-    box-sizing: border-box;
     font-family: var(--font-family-paragraph);
-    position: fixed;
-    top: 0px;
+    position: sticky;
+    top:0px;
 }
 .navbar a{
     text-decoration: none;
@@ -44,7 +43,31 @@
     justify-content: space-between;
     justify-content: center;
     gap: 35px;
+
    
+}
+.dropdown{
+    position: relative;
+}
+.submenu{
+    position:absolute;
+    top: 100%;
+    left:0;
+    display:none;
+    z-index: 999; 
+    
+}
+.submenuitem {
+    background-color:#e8e8e8;
+    width:140px;
+    padding:10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+
+  
+}
+.dropdown:hover .submenu{
+    display:block;
 }
 
 .banner-icons{
@@ -52,30 +75,29 @@
     flex-direction:column;
     justify-content: center;
     justify-content: right;
-    gap:5px;   
+    gap:2px; 
 }
 
 .banner-icons .call{
     display: flex;
     justify-content: right;
-    font-size: 25px;
+    font-size: 18px;
     color:#FFD700;
+   
 }
 .banner-icons .whatsapp{
     display: flex;
     justify-content: right;
-    font-size: 20px; 
+    font-size: 18px; 
     color:#FFD700;
 }
 .top-banner{
     width:100%;
-    height: 550px;
+    height: 450px;
     background-image: url(./images/banner.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    position: top;
-    top: 100px;
     
 }
 .banner-content{
@@ -96,7 +118,7 @@
     margin:5px 50px;
     padding:40px 5px;
     width:90%;
-    height: 200px;
+    height: 180px;
     display: flex;
     justify-content: center;
     justify-items: space-between;
@@ -126,7 +148,7 @@
     gap:35px;
 
 }
-.form input, .form select{
+.form input, .form select {
     width: 200px;
     height: 35px;
     border-radius: 10px;
@@ -134,7 +156,7 @@
     padding: 5px;
     font-family: var(--font-family-paragraph);
 }   
-.button .car, .button .truck, .trackingform button{
+.button .car, .button .truck, .trackingform button ,.form2 .inputdatatwo input{
     border: 1px solid #FF0000;
     background-color: #FF0000;  
     width: 115px;
@@ -173,6 +195,7 @@
     border-bottom-left-radius: 50px;
     align-items: center;
     gap: 100px;
+    height:100px;
 
 }
 .main-heading{
@@ -198,14 +221,14 @@
 .image img{
     width:100%;
 }
-.card .heading{
+.card .heading {
     font-family: var(--font-family-heading);
     font-size: 15px;
     text-align: center;
     font-weight: bold;
 }
 .card .paragraph{
-     font-family:var(--font-family-paragraph);
+    font-family:var(--font-family-paragraph);
     font-size: 15px;
     text-align: center;
     
@@ -254,4 +277,259 @@
 .slider a{
     text-decoration: none;
     color:#fff;
+}
+.cards-wrapper{
+    display: flex;
+    justify-content: center;
+    margin:50px;
+    padding:20px;
+    gap:10px;
+    border-radius: 25px;
+
+}
+.cards-wrapper a {
+    text-decoration: none;
+    color:#fff;
+    text-align: center;
+   
+}
+.cards-wrapper .btn{
+    background-color: #FF0000;
+    border: 1px solid #FF0000;
+    display:flex;
+    justify-content: center;
+}
+.sectionthree{
+    display:flex;
+    width:90%;
+    border: 5px solid #FF0000;
+    border-radius: 50px;
+    border-bottom-right-radius: 120px;
+    margin:5px 50px;
+    padding:10px;
+    justify-content: center;
+
+}
+.sectionthree .content{
+    width:50%;
+}
+.sectiothree  img{
+    width:100%;
+    
+    
+}
+
+.sectionthree .paragraph{
+    width:100%;
+    text-align:left;
+    font-family: var(--font-family-paragraph);
+    font-size: 20px;
+}
+
+.sectionthree .paragraph .main-heading{ 
+    text-align:left;
+    font-family: var(--font-family-heading);
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.sectionfour{
+    height:400px;
+    width:90%;
+    border: 3px solid #fff;
+    border-radius: 25px;
+    
+    margin:20px 50px;
+    padding:10px;
+    background-image: url(./images/lamousine.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+.sectionfour .content{
+    margin-top: 160px;
+}
+.sectionfour .content .main-heading{
+    color:#fff;
+    font-family: var(--font-family-heading);
+    font-size: 50px;
+}
+.sectionfour .content .paragraph{
+    color:#fff;
+    font-family: var(--font-family-paragraph);
+    font-size: 20px;
+    text-align: center;
+    
+}
+.sectionfour .button button {
+   
+    margin-left: 550px;
+    background-color: #FF0000;
+    font-family: var(--font-family-paragraph);
+    width:10%;
+    height:50px;
+    font-size: 15px;
+    color:#fff;
+    border-radius: 15px;   
+}
+.form2{
+    width:70%;
+    display:flex;
+    justify-content: center;
+    margin: 10px 200px;
+    padding:10px;
+
+    background-color: #fff;
+    border: 2px solid #FF0000;
+    border-radius: 15px;
+    border-bottom-right-radius: 60px;
+   
+   
+}
+.form2 .inputdata{
+    display:flex;
+    gap:10px;
+}
+.form2 .inputdata input{
+    border: none;
+}
+.form2 .inputdata .title{
+    display: flex;
+    align-items: center;
+    border: 2px solid #ccc;
+    border-radius: 15px;
+    gap:5px;
+}
+.form2 .inputdatatwo{
+    display:flex;
+    flex-direction: column;
+    gap:10px;
+    justify-content: center;
+    align-items: center;
+
+}
+.form2 .inputdatatwo textarea{
+    border-radius: 15px;
+
+}
+.card{
+    background-color:	#D3D3D3;
+    border-radius: 25px;
+    box-shadow: 10px 10px 3px #B2BEB5;
+    margin:10px;
+}
+.card-text {
+    display:flex;
+    justify-content: center;
+    justify-content: space-between;
+
+}
+.card-title{
+    text-align: left;
+}
+.cardbody .btn{
+    display: flex;
+    justify-content: center;
+    align-items: right;
+    border: 1px solid #FF0000;
+    background-color: #FF0000;  
+    width: 110px;
+    height:43px;
+    font-family: var(--font-family-paragraph);
+    font-size: 15px;
+    padding: 10px;
+    color: #fff;
+    border-radius: 10px;
+    align-items: center;
+   
+}
+card-text{
+    font-family: var(--font-family-heading);
+}
+
+    .displayingcards .section-1{
+    margin:5x 50px;
+    padding:20px 10px;
+    width:90%;
+    height:210px;
+    display: flex;
+    justify-content: center;
+    border: 3px solid #FF0000 ;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px; 
+}
+.sectiontwo {
+    display:flex;
+    justify-content: center;
+    justify-content: space-between;
+    margin-left: 40px;
+    margin-right: 90px;
+}
+
+.sectiontwo .button  button{
+    display: flex;
+    justify-content: center;
+    align-items: right;
+    border: 1px solid #FF0000;
+    background-color: #FF0000;  
+    width: 110px;
+    height:43px;
+    font-family: var(--font-family-paragraph);
+    font-size: 15px;
+    padding: 10px;
+    color: #fff;
+    border-radius: 10px;
+    align-items: center;
+   
+}
+card-text{
+    font-family: var(--font-family-heading);
+}
+.card-text {
+    display:flex;
+    font-family: var(--font-family-paragraph);
+    font-size: 15px;
+    text-align: center;
+    
+}
+.periods{
+    display:flex;
+    justify-content: center;
+    justify-content:space-between;
+    font-family: var(--font-family-paragraph);
+    font-size: 12px;
+    text-align: center;
+    gap:10px;
+    
+}
+.periods .period{
+    width:100px;
+    background-color: #FF0000;
+    color:white;
+    border-radius: 15px;
+    padding:5px;
+}
+.buttons{
+    display:flex;
+    justify-content: center;
+    justify-content:space-between;
+    font-family: var(--font-family-paragraph);
+    font-size: 20px;
+    text-align: center;
+
+}
+.buttons a{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #FF0000;
+    width:100px;
+    border-radius: 15px;
+    padding:5px;
+    color:white;
+    font-size: 10px;
+    
+   
 }

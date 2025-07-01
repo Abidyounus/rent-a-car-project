@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <title>Al Baz-Car Subscription Services</title> 
+</head>
+<body>
+    <style>
+.section-1{
+    margin:5x 50px;
+    padding:20px 10px;
+    width:90%;
+    height:210px;
+    display: flex;
+    justify-content: center;
+    border: 3px solid #FF0000 ;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px; 
+}
+.card{
+    background-color:	#D3D3D3;
+    border-radius: 25px;
+    box-shadow: 10px 10px 3px #B2BEB5;
+    margin:10px;
+}
+.card-text {
+    display:flex;
+    justify-content: center;
+    justify-content: space-between;
+
+}
+.card-title{
+    text-align: left;
+}
+.sectionone{
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+}
+
+.button button {
+    display: flex;
+    justify-content: center;
+    align-items: right;
+    border: 1px solid #FF0000;
+    background-color: #FF0000;  
+    width: 110px;
+    height:43px;
+    font-family: var(--font-family-paragraph);
+    font-size: 15px;
+    padding: 10px;
+    color: #fff;
+    border-radius: 10px;
+    align-items: center;
+   
+}
+card-text{
+    font-family: var(--font-family-heading);
+}
+
+    </style>
+    
+    <header>
+        <!--Menu-->
+        <div class="navbar">
+            <div class="logo">
+                <div><img src="./images/logo.png" height="90px" width="90px"></div>
+            </div>
+            <div class="nav-items">
+                <div><a href="./home.html">Home</a></div>
+                <div class="dropdown">
+                    <a href="#">Car Rental</a>
+                    <div class="submenu"> 
+                        <div class="submenuitem"><a href="./economycar.html ">Economy Car </a></div>
+                        <div class="submenuitem"><a href="luxurycar.html">Luxury Car  </a></div>
+                        <div class="submenuitem"><a href="lemonisecar.html">Lemonise Car</a></div> 
+                    </div>
+                </div>
+                <div><a href="./ride.html">Ride</a></div>
+                <div><a href="#">Car Subscription</a></div>
+                <div><a href=".">Cargo Truck</a></div>
+                <div><a href=".">Become A Partner</a></div>
+                <div><a href=".">Contact us</a></div>
+                <div><a href=".">About us</a></div>
+                <div><a href=".">Log In</a></div>
+            </div>
+    </header>
+    <!--Top Banner -->
+    <div class="top-banner" style="background-image: url(./images/car\ subscription.jpg);">
+        <div class="banner-content">
+            <div class="banner-heading"><h1>Change Your Car? — Pause Your Subscription</h1> </div>
+            <div class="banner-para"><h2>Change The Car,Cancel Monthly ? Any Time !</h2></div>
+        </div>
+        <div class="banner-icons">
+            <div class="call"><a href=""><i class="fa-solid fa-phone"></i></a></div>
+            <div class="whatsapp"><a href=""><i class="fa-brands fa-whatsapp"></i></a></div>
+        </div>
+    </div>
+    <br>
+       <!--Section One- Cards Showing Services with CTA Buttons in Carousel-Bootstrap-->
+       <div class="sectionone">
+            <div class="head" style="font-family: var(--font-family-heading);text-align: left;font-size: 35px;font-weight: bold;margin-left: 15px;">Unlock Your Drive</div>
+            <div class="button"><button type="submit"> <a href="" ><i class="fa-solid fa-arrow-right"></i><br>View All</a></button></div>
+       </div>
+       <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="cards-wrapper">
+                        <div class="card" style="width: 18rem;">
+                            <img src="./images/vw-jetta.png" class="card-img-top" alt="airport">
+                            <div class="card-body" class="text-center" >
+                                <h5 class="card-title">Volkswagen Jetta</h5>
+                                <div class="card-text" >
+                                    <div class="person">
+                                        <i class="fa-solid fa-person"></i>
+                                        <p>5</p>
+                                    </div>
+                                    <div class="door">
+                                        <i class="fa-solid fa-door-closed"></i>
+                                        <p>4</p>
+                                    </div>
+                                    <div class="auto">
+                                        <i class="fa-solid fa-robot"></i>
+                                        <p>Auto</p>
+                                    </div>
+                                    <div class="suitcase">
+                                        <i class="fa-solid fa-suitcase-rolling"></i>
+                                        <p>2</p>
+                                    </div>
+                                </div>
+                                <div class="paragraph">$ 789 <span style="border-left: 2px solid #FF0000;"> Month </span><sup>*</sup></div>
+                                <div class="subparagraph">+ Enrollment fees from $ 199 </div>
+                                <a href="#" class="btn btn-primary">Subscribe Now</a>
+                            </div>
+                        </div> 
+                        <div class="card" style="width: 18rem;">
+                            <img src="./images/bmw.png" class="card-img-top" alt="chaufferservices">
+                            <div class="card-body" class="text-center" >
+                                <h5 class="card-title">Premiem BMW-2 Series</h5>
+                                <div class="card-text">
+                                    <div class="person">
+                                        <i class="fa-solid fa-person"></i>
+                                        <p>5</p>
+                                    </div>
+                                    <div class="door">
+                                        <i class="fa-solid fa-door-closed"></i>
+                                        <p>4</p>
+                                    </div>
+                                    <div class="auto">
+                                        <i class="fa-solid fa-robot"></i>
+                                        <p>Auto</p>
+                                    </div>
+                                    <div class="suitcase">
+                                        <i class="fa-solid fa-suitcase-rolling"></i>
+                                        <p>2</p>
+                                    </div>
+                                </div>
+                                <div class="paragraph">$ 869 <span style="border-left: 2px solid #FF0000;"> Month </span><sup>*</sup></div>
+                                <div class="subparagraph">+ Enrollment fees from $ 199  </div>
+                                <a href="#" class="btn btn-primary">Subscribe Now</a>
+                            </div>  
+                        </div>
+                        <div class="card" style="width: 18rem;">
+                            <img src="./images/mb-c-.png" class="card-img-top" alt="cityride">
+                            <div class="card-body" class="text-center" >
+                                <h5 class="card-title">Luxury Mercedez Benz</h5>
+                                <div class="card-text">
+                                    <div class="person">
+                                        <i class="fa-solid fa-person"></i>
+                                        <p>5</p>
+                                    </div>
+                                    <div class="door">
+                                        <i class="fa-solid fa-door-closed"></i>
+                                        <p>4</p>
+                                    </div>
+                                    <div class="auto">
+                                        <i class="fa-solid fa-robot"></i>
+                                        <p>Auto</p>
+                                    </div>
+                                    <div class="suitcase">
+                                        <i class="fa-solid fa-suitcase-rolling"></i>
+                                        <p>2</p>
+                                    </div>
+                                </div>
+                                <div class="paragraph">$ 899 <span style="border-left: 2px solid #FF0000;"> Month </span><sup>*</sup></div>
+                                <div class="subparagraph">+ Enrollment fees from $ 199  </div>
+                                <a href="#" class="btn btn-primary">Subscribe Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item active">
+                    <div class="cards-wrapper">
+                        <div class="card" style="width: 18rem;">
+                            <img src="./images/toyota-rav4-5d-schwarz-2019 (1).png" class="card-img-top" alt="airport">
+                            <div class="card-body" class="text-center" >
+                                <h5 class="card-title">Toyota Rav 4</h5>
+                                <div class="card-text">
+                                    <div class="person">
+                                        <i class="fa-solid fa-person"></i>
+                                        <p>5</p>
+                                    </div>
+                                    <div class="door">
+                                        <i class="fa-solid fa-door-closed"></i>
+                                        <p>4</p>
+                                    </div>
+                                    <div class="auto">
+                                        <i class="fa-solid fa-robot"></i>
+                                        <p>Auto</p>
+                                    </div>
+                                    <div class="suitcase">
+                                        <i class="fa-solid fa-suitcase-rolling"></i>
+                                        <p>2</p>
+                                    </div>
+                                </div>          
+                                <div class="paragraph">$ 899 <span style="border-left: 2px solid #FF0000;"> Month </span><sup>*</sup></div>
+                                <div class="subparagraph">+ Enrollment fees from $ 199   </div>
+                                <a href="#" class="btn btn-primary">Subscribe Now</a>
+                            </div>
+                        </div>
+                        <div class="card" style="width: 18rem;">
+                            <img src="./images/toyota-camry-4d-red-2023.png" class="card-img-top" alt="airport">
+                            <div class="card-body" class="text-center" >
+                                <h5 class="card-title">Toyota Camry</h5>
+                                <div class="card-text">
+                                    <div class="person">
+                                        <i class="fa-solid fa-person"></i>
+                                        <p>5</p>
+                                    </div>
+                                    <div class="door">
+                                        <i class="fa-solid fa-door-closed"></i>
+                                        <p>4</p>
+                                    </div>
+                                    <div class="auto">
+                                        <i class="fa-solid fa-robot"></i>
+                                        <p>Auto</p>
+                                    </div>
+                                    <div class="suitcase">
+                                        <i class="fa-solid fa-suitcase-rolling"></i>
+                                        <p>2</p>
+                                    </div>
+                                </div>          
+                                <div class="paragraph">$ 799 <span style="border-left: 2px solid #FF0000;"> Month </span><sup>*</sup></div>
+                                <div class="subparagraph">+ Enrollment fees from $ 199  </div>
+                                <a href="#" class="btn btn-primary">Subscribe Now</a>
+                            </div>
+                        </div>
+                        <div class="card" style="width: 18rem;">
+                            <img src="./images/bmw-x1-suv-grey-2025-US.png" class="card-img-top" alt="airport">
+                            <div class="card-body" class="text-center" >
+                                <h5 class="card-title">Premium BMW X1</h5>
+                                <div class="card-text">
+                                    <div class="person">
+                                        <i class="fa-solid fa-person"></i>
+                                        <p>5</p>
+                                    </div>
+                                    <div class="door">
+                                        <i class="fa-solid fa-door-closed"></i>
+                                        <p>4</p>
+                                    </div>
+                                    <div class="auto">
+                                        <i class="fa-solid fa-robot"></i>
+                                        <p>Auto</p>
+                                    </div>
+                                    <div class="suitcase">
+                                        <i class="fa-solid fa-suitcase-rolling"></i>
+                                        <p>2</p>
+                                    </div>
+                                </div>          
+                                <div class="paragraph">$ 919 <span style="border-left: 2px solid #FF0000;"> Month </span><sup>*</sup></div>
+                                <div class="subparagraph">+ Enrollment fees from $ 199   </div>
+                                <a href="#" class="btn btn-primary">Subscribe Now</a>
+                            </div>
+                        </div>       
+                    </div>
+                </div>
+                
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        
+            
+    
+       <!--Section Two-displaying services with content-->
+       <div class="sectionthree">
+            <div class="content">
+                <div class="main-heading">
+                    Flexible Car Subscription For <br> Hassle-Free Mobility
+                </div>
+                <div class="paragraph">
+                    <p>Our car subscription service offers a convenient alternative to ownership providing access to a wide range of vehicles with one monthly fee that includes insurance, maintenance, and support. Enjoy the freedom to upgrade, switch, or cancel anytime without long-term commitments.</p>
+                </div>
+            </div>
+            <div class="pic">
+                <img src="./images/car subscription2.jpg" alt="driver" height="300px" width="450px">
+            </div>
+       </div>
+       <!--Section Four-displaying ride features  with content-->
+       <div class="sectionfour">
+        <div class="content">
+                <div class="main-heading">
+                   Luxury Limousine Service 
+                </div>
+                <div class="paragraph">
+                    <p>Experience refined elegance with our elite fleet of luxury limousines and executive vans, driven by professional chauffeurs renowned for their impeccable service.</p>
+                </div>
+                <div class="button">
+                <button type="submit"> <a href="" >Learn More</a></button></div>
+            </div>
+       </div>
+       <br>
+       <br>
+
+
+       
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>        
+           
+    <!---Footer --->
+      <div clss="footer">
+        <footer class="bg-black text-white pt-5 pb-3">
+            <div class="container">
+                <div class="row">
+
+      <!-- Contact Us -->
+                    <div class="col-md-4 mb-4">
+                        <h5 class="text-danger border-start border-4 ps-2 mb-3">CONTACT US</h5>
+                        <img src="images/logo.png" alt="Al Baz Logo" class="mb-3" style="width: 120px;">
+                        <p><i class="fas fa-phone me-2"></i>+971 4 123 4567</p>
+                        <p><i class="fas fa-envelope me-2"></i>info@albazuae.com</p>
+                    </div>
+
+      <!-- Operation Hours -->
+                    <div class="col-md-4 mb-4">
+                        <h5 class="text-danger border-start border-4 ps-2 mb-3">OPERATION HOURS</h5>
+                        <p>Monday to Saturday 9 AM to 7:30 PM</p>
+                        <p>Friday Prayer Break 12:30 PM to 2:30 PM</p>
+                        <h6 class="mt-3">HEAD OFFICE</h6>
+                        <p>Al-Baz Rent A Car & Freight Services
+                        Office #210, Al Maktoum Business Center
+                        Deira, Dubai, United Arab Emirates
+                        </p>
+                    </div>
+
+      <!-- Social Media -->
+                    <div class="col-md-4 mb-4">
+                        <h5 class="text-danger border-start border-4 ps-2 mb-3">SOCIAL MEDIA</h5>
+                        <div class="mb-3">
+                        <a href="https://pk.linkedin.com/" class="text-white me-3" target="_blank"><i class="fab fa-linkedin fa-lg"></i></a>
+                        <a href="https://x.com/" class="text-white me-3" target="_blank"><i class="fab fa-twitter fa-lg"></i></a>
+                        <a href="https://www.instagram.com/" class="text-white me-3" target="_blank"><i class="fab fa-instagram fa-lg"></i></a>
+                        <a href="https://www.facebook.com/" class="text-white me-3" target="_blank"><i class="fab fa-facebook fa-lg"></i></a>
+                        </div>
+                        <p>We accept payments via debit/credit cards</p>
+                        <div class="d-flex flex-wrap gap-2 mb-3">
+                        <img src="images/visa_new.jpg" alt="Mastercard" height="40">
+                        <img src="images/visa_sayara.jpg" alt="Visa" height="40">
+                        </div>
+                        <div class="d-flex gap-2">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Google Play" height="40">
+                        <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="App Store" height="40">
+                        </div>
+                    </div>
+                    </div>
+
+                    <!-- Footer Links and Bottom Text -->
+                    <hr class="border-secondary">
+                    <div class="text-center small">
+                    <p class="mb-1 fw-bold">Cars for Rent | Monthly Car Rental</p>
+                    <p>Terms and Conditions | Privacy & Policy | FAQ </p>
+                    <p class="text-danger mt-3 mb-0">&copy; 2025, Powered By Al Baz</p>
+                    </div>
+                </div>
+                </footer>
+      </div>
+
+                        
+
+                            
+     
+    
+
+
+         
+   
+    
+</body>
+</html>
