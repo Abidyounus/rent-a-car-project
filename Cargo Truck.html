@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <title>Al Baz-Cargo Truck Service</title> 
+</head>
+<body>
+    <style>
+.banner-heading{
+    margin-top:150px;
+}
+.card-text {
+    display:flex;
+    font-family: var(--font-family-paragraph);
+    font-size: 15px;
+    text-align: center;
+    
+}
+.periods{
+    display:flex;
+    justify-content: center;
+    justify-content:space-between;
+    font-family: var(--font-family-paragraph);
+    font-size: 12px;
+    text-align: center;
+    gap:10px;
+    
+}
+.periods .period{
+    width:100px;
+    background-color: #FF0000;
+    color:white;
+    border-radius: 15px;
+    padding:5px;
+}
+.buttons{
+    display:flex;
+    justify-content: center;
+    justify-content:space-between;
+    font-family: var(--font-family-paragraph);
+    font-size: 20px;
+    text-align: center;
+
+}
+.buttons a{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #FF0000;
+    width:100px;
+    border-radius: 15px;
+    padding:5px;
+    color:white;
+    font-size: 10px;
+    
+   
+}
+
+
+.btn {
+    text-decoration: none;
+}
+
+.hero {
+      background: url('images/truck\ image.webp') no-repeat center center/cover;
+      color: white;
+      padding: 80px 20px;
+      position: relative;
+    }
+    .contact-buttons {
+      position: absolute;
+      right: 20px;
+      top: 50%;
+      transform: translateY(-50%);
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .feature-icon {
+      font-size: 30px;
+      padding: 20px;
+      color: rgb(255, 255, 255);
+      border-radius: 10px;
+      display: inline-block;
+    }
+    .feature-box {
+      padding: 20px;
+      border-radius: 8px;
+    }
+    /* Reset some defaults */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* Footer Styles */
+.footer {
+  background-color: #222;
+  color: #fff;
+  padding: 30px 20px;
+  text-align: center;
+}
+
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  border-bottom: 1px solid #444;
+  padding-bottom: 20px;
+}
+
+.footer .logo img {
+  width: 120px;
+}
+
+.social-icons a {
+  color: #fff;
+  margin-left: 15px;
+  font-size: 20px;
+  transition: color 0.3s;
+}
+
+.social-icons a:hover {
+  color: #00aced;
+}
+
+.footer-middle {
+  margin: 20px 0;
+  line-height: 1.6;
+}
+
+.footer-bottom a {
+  color: #ccc;
+  margin: 0 10px;
+  text-decoration: none;
+  font-size: 14px;
+  transition: color 0.3s;
+}
+
+.footer-bottom a:hover {
+  color: #fff;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .footer-top {
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .social-icons {
+    margin-top: 15px;
+  }
+.footer a:hover {
+    color: #dc3545 !important;
+  }
+.footer img {
+    object-fit: contain;
+  }
+}
+
+
+    </style>
+    
+    <header>
+        <!--Menu-->
+        <div class="navbar">
+            <div class="logo">
+                <div><img src="./images/logo.png" height="90px" width="90px"></div>
+            </div>
+            <div class="nav-items">
+                <div><a href="./home.html">Home</a></div>
+                <div class="dropdown">
+                    <a href="#">Car Rental</a>
+                    <div class="submenu"> 
+                        <div class="submenuitem"><a href="./economycar.html ">Economy Car </a></div>
+                        <div class="submenuitem"><a href="luxurycar.html">Luxury Car  </a></div>
+                        <div class="submenuitem"><a href="lemonisecar.html">Lemonise Car</a></div> 
+                    </div>
+                </div>
+                <div><a href="./ride.html">Ride</a></div>
+                <div><a href="./car subscription.html">Car Subscription</a></div>
+                <div><a href="#">Cargo Truck</a></div>
+                <div><a href="#">Become A Partner</a></div>
+                <div><a href="./contact us.html">Contact us</a></div>
+                <div><a href="./aboutus.html">About us</a></div>
+                <div><a href="#">Log In</a></div>
+            </div>
+    </header>
+    <!-- Top Banner -->
+<section class="hero text-center text-white">
+  <div class="container">
+    <h1 class="mb-4" style="color: rgb(0, 0, 0); font-weight: bolder;  font-size: 40px; margin-right: 30px;"> Stress Free Cargo Services</h1>
+    <div class="row justify-content-center">
+      <!-- Booking Form -->
+      <div class="col-md-6 bg-dark p-4 rounded">
+        <form>
+          <div class="mb-2">
+            <label for="truckType" class="form-label">Truck Type</label>
+            <select id="truckType" class="form-select">
+              <option>FTL</option>
+              <option>LTL</option>
+              <option>Temperature Controlled</option>
+            </select>
+          </div>
+          <div class="mb-2">
+            <label>Date</label>
+            <input type="date" class="form-control" />
+          </div>
+          <div class="mb-2">
+            <label>Time</label>
+            <input type="time" class="form-control" />
+          </div>
+          <div class="mb-2">
+            <label>Pickup Location</label>
+            <input type="text" class="form-control" placeholder="Enter pickup location" />
+          </div>
+          <div class="mb-2">
+            <label>Drop-off Location</label>
+            <input type="text" class="form-control" placeholder="Enter drop-off location" />
+          </div>
+          <div class="mb-2">
+            <label>Estimated Cost</label>
+            <input type="text" class="form-control" placeholder="Auto-calculated" readonly />
+          </div>
+          <button class="btn btn-primary w-100 mt-2">Book Now</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Tracking Form -->
+    <div class="mt-4">
+      <form class="d-flex justify-content-center gap-2">
+        <input type="text" class="form-control w-50" placeholder="Enter Tracking ID" />
+        <button class="btn btn-light">Track Now</button>
+      </form>
+    </div>
+
+    <!-- Contact Buttons -->
+    <div class="contact-buttons">
+      <a href="tel:+971XXXXXXXXX" class="btn btn-outline-light"><i class="fas fa-phone"></i> Call</a>
+      <a href="https://wa.me/971XXXXXXXXX" class="btn btn-outline-success"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+    </div>
+  </div>
+</section>
+
+<!-- Section 2: Services -->
+<section class="py-5 bg-light">
+  <div class="container text-center">
+    <h2 class="mb-5">Discover Ideal Freight Services In Dubai</h2>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="card h-100">
+          <img src="images/moving-and-storage-dubai-1.webp" alt="FLT" style="background-size: cover;">
+          <div class="card-body">
+            <h5 class="card-title">Full Truck Load (FTL)</h5>
+            <p class="card-text">Dedicated truck transport for high-volume shipments across UAE and GCC. Ideal for secure, fast bulk deliveries.</p>
+            <a href="#" class="btn btn-primary">Book Now</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card h-100">
+          <img src="images/less than load truck.webp" alt="LTT" style="background-size:cover ; height: 280px;">
+          <div class="card-body">
+            <h5 class="card-title">Less Than Truck Load (LTL)</h5>
+            <p class="card-text">Share freight space and save costs by transporting smaller loads. Perfect for SMEs needing flexible logistics.</p>
+            <a href="#" class="btn btn-primary">Book Now</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card h-100">
+          <img src="images/Temperature-Controlled Freight.jpg" alt="TCF" style="background-size: cover; height: 280px; width: 350px;">
+          <div class="card-body">
+            <h5 class="card-title">Temperature-Controlled Freight</h5>
+            <p class="card-text">Refrigerated transport for perishables and pharmaceuticals. Monitored and maintained temperature throughout.</p>
+            <a href="#" class="btn btn-primary">Book Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Section 3: GCC Freight Info -->
+<section class="py-5">
+  <div class="container d-md-flex align-items-center">
+    <div class="col-md-6">
+      <h2>Comprehensive Freight Solutions Across Dubai and the GCC</h2>
+      <p>
+        Our freight services are designed to deliver efficiency, reliability, and flexibility for businesses of all sizes. From full truckload and temperature-controlled transport to cross-border logistics and real-time tracking, we offer end-to-end solutions tailored to your cargo needs—ensuring timely and secure delivery throughout Dubai and the wider GCC region.
+      </p>
+    </div>
+    <div class="col-md-6">
+      <img src="images/GCC-railway_route.jpg" class="img-fluid" alt="GCC Transport" style="margin-left: 130px;">
+    </div>
+  </div>
+</section>
+
+<!-- Section 4: Feature Icons -->
+<section class="py-5 bg-light">
+  <div class="container text-center">
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="feature-box text-white" style="background-color: rgb(35, 34, 34);">
+          <i class="fas fa-shipping-fast feature-icon bg-dark"></i>
+          <h5 class="mt-3">Same-Day & Express Delivery</h5>
+          <p>Urgent shipment options with guaranteed same-day dispatch via our local logistics network.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="feature-box text-white" style="background-color: rgb(35, 34, 34);">
+          <i class="fas fa-map-marker-alt feature-icon bg-dark"></i>
+          <h5 class="mt-3">Live Shipment Tracking</h5>
+          <p>Track your freight in real-time with GPS-enabled tracking, from dispatch to delivery.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="feature-box text-white" style="background-color: rgb(35, 34, 34);">
+          <i class="fas fa-handshake feature-icon bg-dark"></i>
+          <h5 class="mt-3">Corporate Freight Contracts</h5>
+          <p>Tailored logistics plans with priority support, dedicated fleets, and monthly billing.</p>
+        </div>
+      </div> 
+      <div class="offset-2 col-md-4">
+        <div class="feature-box  text-white" style="background-color: rgb(35, 34, 34);">
+          <i class="fas fa-truck-loading feature-icon bg-dark"></i>
+          <h5 class="mt-3">Heavy Equipment Transport</h5>
+          <p>Flatbed & lowbed trucks for oversized cargo, including permits and expert handling.</p>
+        </div>
+      </div>
+      <div class="col-md-4" >
+        <div class="feature-box text-white" style="background-color: rgb(35, 34, 34);">
+          <i class="fas fa-shield-alt feature-icon bg-dark"></i>
+          <h5 class="mt-3">Secure & Insured Transport</h5>
+          <p>Shipments protected with full cargo insurance. Peace of mind guaranteed.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+    
+
+
+
+
+
+
+     <!---Footer --->
+      <div clss="footer">
+        <footer class="bg-black text-white pt-5 pb-3">
+            <div class="container">
+                <div class="row">
+
+      <!-- Contact Us -->
+                    <div class="col-md-4 mb-4">
+                        <h5 class="text-danger border-start border-4 ps-2 mb-3">CONTACT US</h5>
+                        <img src="images/logo.png" alt="Al Baz Logo" class="mb-3" style="width: 120px;">
+                        <p><i class="fas fa-phone me-2"></i>+971 4 123 4567</p>
+                        <p><i class="fas fa-envelope me-2"></i>info@albazuae.com</p>
+                    </div>
+
+      <!-- Operation Hours -->
+                    <div class="col-md-4 mb-4">
+                        <h5 class="text-danger border-start border-4 ps-2 mb-3">OPERATION HOURS</h5>
+                        <p>Monday to Saturday 9 AM to 7:30 PM</p>
+                        <p>Friday Prayer Break 12:30 PM to 2:30 PM</p>
+                        <h6 class="mt-3">HEAD OFFICE</h6>
+                        <p>Al-Baz Rent A Car & Freight Services
+                        Office #210, Al Maktoum Business Center
+                        Deira, Dubai, United Arab Emirates
+                        </p>
+                    </div>
+
+      <!-- Social Media -->
+                    <div class="col-md-4 mb-4">
+                        <h5 class="text-danger border-start border-4 ps-2 mb-3">SOCIAL MEDIA</h5>
+                        <div class="mb-3">
+                        <a href="https://pk.linkedin.com/" class="text-white me-3" target="_blank"><i class="fab fa-linkedin fa-lg"></i></a>
+                        <a href="https://x.com/" class="text-white me-3" target="_blank"><i class="fab fa-twitter fa-lg"></i></a>
+                        <a href="https://www.instagram.com/" class="text-white me-3" target="_blank"><i class="fab fa-instagram fa-lg"></i></a>
+                        <a href="https://www.facebook.com/" class="text-white me-3" target="_blank"><i class="fab fa-facebook fa-lg"></i></a>
+                        </div>
+                        <p>We accept payments via debit/credit cards</p>
+                        <div class="d-flex flex-wrap gap-2 mb-3">
+                        <img src="images/visa_new.jpg" alt="Mastercard" height="40">
+                        <img src="images/visa_sayara.jpg" alt="Visa" height="40">
+                        </div>
+                        <div class="d-flex gap-2">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Google Play" height="40">
+                        <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="App Store" height="40">
+                        </div>
+                    </div>
+                    </div>
+
+                    <!-- Footer Links and Bottom Text -->
+                    <hr class="border-secondary">
+                    <div class="text-center small">
+                    <p class="mb-1 fw-bold">Cars for Rent | Monthly Car Rental</p>
+                    <p>Terms and Conditions | Privacy & Policy | FAQ </p>
+                    <p class="text-danger mt-3 mb-0">&copy; 2025, Powered By Al Baz</p>
+                    </div>
+                </div>
+                </footer>
+      </div>
+
+                        
+
+                            
+     
+    
+
+
+         
+   
+    
+</body>
+</html>
