@@ -1,3 +1,6 @@
 [submodule "rental-car"]
 	path = rental-car
 	url = https://github.com/Abidyounus/rental-car.git
+[submodule "path/to/rental-car"]
+	path = path/to/rental-car
+	url = https://github.com/Abidyounus/rental-car.git
